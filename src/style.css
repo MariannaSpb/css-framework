@@ -1,0 +1,31 @@
+.input {
+  width: 41%;
+  border: 2px solid #02ebcd;
+  border-radius: 8px;
+  min-height: 50px;
+}
+.input--active {
+  outline: red 2;
+}
+.input--focus {
+  outline: #ff0;
+}
+
+.input::placeholder {
+  color: #959595;
+}
+
+.button {
+  display: inline-block;
+  min-height: 50px;
+  min-width: 100px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #5a06ff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
