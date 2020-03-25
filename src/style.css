@@ -5,10 +5,12 @@
   min-height: 50px;
 }
 .input--active {
-  outline: red 2;
+  outline: 2px solid red;
+  border-radius: 8px;
 }
 .input--focus {
-  outline: #ff0;
+  outline: 2px solid #ff0;
+  border-radius: 8px;
 }
 
 .input::placeholder {

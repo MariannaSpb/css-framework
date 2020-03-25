@@ -1,18 +1,18 @@
-//color
-$main-color: #212121;
-$black: #0000;
-$white: #fff;
-$gray: #959595;
-$red: rgb(255, 0, 0)2;
-$yellow: #ff0;
-$green: #02ebcd;
-$dark-blue: #5a06ff;
 
-//fonts
-$defalt-font-family: "Gerbera", Arial, sans-serif;
-$defalt-font-color: $main-color;
+// map
+$breakpoints: (
+    mobile: 767px,
+    tablet: 992px,
+    desktop: 1200px
+);
 
-//resolutions
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1440px;
+$colors: (
+    main-color: #212121,
+    black: #0000,
+    white: #fff,
+    gray: #959595,
+    red: rgb(255, 0, 0),
+    yellow: #ff0,
+    green: #02ebcd,
+    dark-blue: #5a06ff,
+);

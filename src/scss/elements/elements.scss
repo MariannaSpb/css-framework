@@ -1,18 +1,20 @@
 .input {
     width: 41%;
-    border: 2px solid $green;
+    border: 2px solid map-get($colors, green);
     border-radius: 8px;
     min-height: 50px;
 
     &--active {
-        outline: $red;
+        outline: 2px solid map-get($colors, red);
+        border-radius: 8px;
     }
     &--focus {
-        outline: $yellow;
+        outline: 2px solid map-get($colors, yellow);
+        border-radius: 8px;
     }
   }
 .input::placeholder {
-    color: $gray;
+    color: map-get($colors, gray)
 }
 
 
@@ -20,9 +22,9 @@
     display: inline-block;
     min-height: 50px;
     min-width: 100px;
-    color:  $white;
+    color: map-get($colors, white);
     font-size: 12px;
-    background-color: $dark-blue;
+    background-color: map-get($colors, dark-blue);
     border: none;
     border-radius: 8px;
     outline: none;

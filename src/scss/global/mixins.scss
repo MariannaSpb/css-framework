@@ -1,17 +1,27 @@
-@mixin mobile-width {
-    @media screen and (min-width: $mobile) {
-        @content;
-    }
-}
 
-@mixin tablet-width {
-    @media screen and (min-width: $tablet) {
+@mixin respond-to($breakpoint) { 
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
         @content;
+      }
     }
-}
+   
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    }
+  };
 
-@mixin desktop-width {
-    @media screen and (min-width: $desktop) {
-        @content;
-    }
-}
+
+  //how to use it
+
+// .element {
+//   color: hotpink;
+
+//   @include respond-to(small) {
+//     color: tomato;
+//   }
+// }
+
+
+
+
